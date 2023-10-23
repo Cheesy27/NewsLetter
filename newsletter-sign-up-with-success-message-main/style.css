@@ -1,0 +1,148 @@
+*,
+**{
+  padding:0;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+
+}
+html, body{
+  font-family: 'Roboto';
+  margin:0;
+  padding:0;
+  width:100%;
+
+}
+#imageI{
+  width:100%;
+}
+
+#content, #form{
+  margin:  0 40px 30px 20px ;
+}
+
+#normalState{
+    display:block;
+}
+#successState{
+    display:none;
+    margin: 50px 20px;
+    
+}
+
+#successState > button{
+    margin-top: 80%;
+}
+
+ul {
+ list-style-type: none;
+
+ 
+}
+
+li {
+  padding-bottom: 5px;
+  text-indent: -16px; /* Adjust the padding to your desired spacing */
+  line-height: 1;
+
+  }
+
+li::before {
+  content: url('assets/images/icon-list.svg'); /* Replace 'your-image.png' with the path to your custom bullet image */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust the spacing between the image and text */
+}
+
+input, label{
+  display: block;
+}
+
+#email{
+  width: 100%;
+  height: 40px;
+  text-align:center;
+  border-radius: 10px;
+  border: 1px solid hsl(231, 7%, 60%);
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 10px; 
+}
+
+button{
+  width: 102%;
+  height: 45px;
+  text-align:center;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(235, 18%, 26%);
+  color:white;
+  margin-right: 0;
+  cursor: pointer;
+  }
+
+#label{
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+}
+
+#errorMsg{
+  display: none;;
+  margin:0;
+  color: red;
+  
+}
+
+@media (min-width: 1024px) {
+    /* Add your laptop-specific styles here */
+
+    body{
+        background: hsl(234, 29%, 20%);
+    }
+    #normalState{
+        width: 700px;
+        height: 500px;
+        margin: 150px auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: white;
+        display:flex;
+        border-radius: 20px;
+        flex-direction: row-reverse;
+    }
+
+    #imageI{
+        content: url("assets/images/illustration-sign-up-desktop.svg");
+        height: 100%;
+        
+        width:100%;
+    }
+
+    .all{
+        flex-direction: column;
+        margin-left: 30px;
+        width:100%;
+    }
+
+    #successState{
+        display: none;
+        flex-direction: column;
+        width: 350px;
+        height: 350px;
+        margin: 200px auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    #successState>button{
+        margin-top: 20px;
+    }
+
+
+
+
+
+}
